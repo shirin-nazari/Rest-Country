@@ -22,26 +22,28 @@ const renderDetails = async () => {
     post.forEach(element => {
         // console.log(element.currencies.currencies[0])
         const border = element.borders ?
-            element.borders.map(item => `<a class="btn btn-outline-secondary list-inline-item" href='#'>${item}</a>`).join('')
+            element.borders.map(item => `<a class="btn btn-outline-secondary list-inline-item d-lg-inline" href='#'>${item}</a>`).join('')
             : 'no Borders';
         section.innerHTML = `
         <img class='image' src=${element.flags.png || element.flags.svg || ""} alt=${element.title}/>
-    <div class='card-body row'>
+        <div class='card-body row'>
         <h3 class='card-title '>${element.name.common}</h3>
-        <div class='right col-sm-6'>
+        <div class='row detail-body'>
+        <div class='col '>
             <p class='card-text'>Native Name : ${element.name.nativeName ? Object.values(element.name.nativeName)[0].common : ''}</p>
             <p class='card-text '>Population : ${element.population}</p>
             <p class='card-text '>Region : ${element.region}</p>
             <p class='card-text '>Sub Region : ${element.subregion}</p>
             <p class='card-text'>Capital : ${element.capital}</p>
         </div>
-        <div class='left col-sm-6'>
+        <div class='col'>
             <p class='card-text'>Top Level Domain : ${element.tld}</p>
             <p class='card-text'>Currencies: ${element.currencies ? Object.values(element.currencies)[0].name : ''}</p>
             <p class='card-text'>Languages: ${element.languages ? Object.values(element.languages).join(', ') : ''}</p>
         </div>
-        <div class='list-inline'>
-            <h6 class='card-text list-inline-item'>Border Countries:
+        </div>
+        <div class='list-inline d-lg-inline d-sm-block'>
+            <h6 class='card-text border-country list-inline-item d-lg-inline d-sm-block d-xs-block'>Border Countries:
             </h6>
             ${border}
         </div >
