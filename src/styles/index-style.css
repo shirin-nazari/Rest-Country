@@ -1,15 +1,16 @@
 /* theme color */
 :root {
   --bs-body-bg: hsl(0, 0%, 98%);
-  --bs-body-color: #161616;
+  --bs-body-color: hsl(200, 15%, 8%);
   --bs-navbar-bg: hsl(0, 0%, 100%);
+
   --bs-shadow: rgba(212, 212, 212, 0.2);
 }
 [data-bs-theme='dark'] {
-  --bs-body-bg: #202d36;
-  --bs-body-color: #fffffa;
-  --bs-navbar-bg: #2b3743;
-  --bs-shadow: rgba(43, 43, 43, 0.2);
+  --bs-body-bg: hsl(207, 26%, 17%);
+  --bs-body-color: hsl(0, 0%, 100%);
+  --bs-navbar-bg: hsl(209, 23%, 22%);
+  --bs-shadow: rgba(43, 43, 43, 0.247);
 }
 body {
   background-color: var(--bs-body-bg);

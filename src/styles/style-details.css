@@ -1,14 +1,14 @@
 /* theme color */
 :root {
   --bs-body-bg: hsl(0, 0%, 98%);
-  --bs-body-color: #161616;
+  --bs-body-color: hsl(200, 15%, 8%);
   --bs-navbar-bg: hsl(0, 0%, 100%);
   --bs-shadow: rgba(212, 212, 212, 0.2);
 }
 [data-bs-theme='dark'] {
-  --bs-body-bg: #202d36;
-  --bs-body-color: #fffffa;
-  --bs-navbar-bg: #2b3743;
+  --bs-body-bg: hsl(207, 26%, 17%);
+  --bs-body-color: hsl(0, 0%, 100%);
+  --bs-navbar-bg: hsl(209, 23%, 22%);
   --bs-shadow: rgba(43, 43, 43, 0.2);
 }
 body {
@@ -60,6 +60,16 @@ body {
   padding: 1em 0.5em;
   font-weight: 800;
 }
+.detail-body {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 1em;
+}
+.border-country {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
 @media only screen and (max-width: 1440px) {
   #navbar {
     width: 100%;
@@ -102,7 +112,6 @@ body {
     width: 100%;
     grid-template-columns: 6fr 1fr;
   }
-
   #btn-back {
     padding: 1em;
     width: 22%;
@@ -116,11 +125,9 @@ body {
     width: 85%;
     height: 80vh;
   }
-  .right {
-    display: block;
-  }
-  .left {
-    display: block;
+  .detail-body {
+    grid-template-columns: 1fr;
+    gap: 1em;
   }
 }
 
@@ -140,6 +147,13 @@ body {
     font-size: 14px;
     padding: 1em;
     margin: 0 0.4em;
+  }
+  .detail-body {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .border-country {
+    display: block;
   }
   #btn-back {
     padding: 1em;
