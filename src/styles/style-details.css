@@ -14,6 +14,9 @@
 body {
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
+  max-width: 2100px;
+  min-width: 375px;
+  margin: 0 auto;
   font-family: 'Poppins', serif;
   font-size: 16px;
   transition: background-color 0.4s, color 0.4s;
@@ -26,9 +29,9 @@ body {
   grid-template-columns: 8fr 1fr;
 }
 .dark-mode {
-  width: 9em;
-  padding: 1em;
-  margin: 0 5em;
+  width: 9rem;
+  padding: 1rem;
+  margin: 0 5rem;
 }
 .dark-mode-html {
   background-color: var(--bs-body-bg);
@@ -44,7 +47,7 @@ body {
   color: var(--bs-body-color);
   outline: 0;
   border: none;
-  padding: 1em;
+  padding: 1rem;
   width: 10%;
   margin: 5rem 0;
 }
@@ -57,18 +60,18 @@ body {
   height: 60vh;
 }
 .card-title {
-  padding: 1em 0.5em;
+  padding: 1rem 0.5rem;
   font-weight: 800;
 }
 .detail-body {
   display: grid;
   grid-template-columns: 3fr 3fr;
-  gap: 1em;
+  gap: 1rem;
 }
 .border-country {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  gap: 1rem;
 }
 @media only screen and (max-width: 1440px) {
   #navbar {
@@ -76,7 +79,7 @@ body {
     grid-template-columns: 9fr 2fr;
   }
   #btn-back {
-    padding: 1em;
+    padding: 1rem;
     width: 12%;
     margin: 5rem 0;
   }
@@ -91,9 +94,9 @@ body {
     grid-template-columns: 7fr 1fr;
   }
   .dark-mode {
-    width: 9em;
-    padding: 1em;
-    margin: 0 2em;
+    width: 9rem;
+    padding: 1rem;
+    margin: 0 2rem;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -102,9 +105,9 @@ body {
     grid-template-columns: 6fr 1fr;
   }
   .dark-mode {
-    width: 9em;
-    padding: 1em;
-    margin: 0 5em;
+    width: 9rem;
+    padding: 1rem;
+    margin: 0 5rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -113,13 +116,13 @@ body {
     grid-template-columns: 6fr 1fr;
   }
   #btn-back {
-    padding: 1em;
+    padding: 1rem;
     width: 22%;
     margin: 5rem 2rem;
   }
   .section-details {
     grid-template-columns: 1fr;
-    margin: 1em 2rem;
+    margin: 1rem 2rem;
   }
   .section-details .image {
     width: 85%;
@@ -127,7 +130,7 @@ body {
   }
   .detail-body {
     grid-template-columns: 1fr;
-    gap: 1em;
+    gap: 1rem;
   }
 }
 
@@ -143,20 +146,20 @@ body {
     margin: 0 0;
   }
   .dark-mode {
-    width: 9em;
+    width: 8rem;
     font-size: 14px;
-    padding: 1em;
-    margin: 0 0.4em;
+    padding: 1rem;
+    margin: 0 0.2rem;
   }
   .detail-body {
     grid-template-columns: 1fr;
-    gap: 1em;
+    gap: 1rem;
   }
   .border-country {
     display: block;
   }
   #btn-back {
-    padding: 1em;
+    padding: 1rem;
     width: 26%;
     margin: 5rem 2rem;
   }
