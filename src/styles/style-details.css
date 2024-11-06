@@ -57,7 +57,7 @@ body {
 }
 .section-details .image {
   width: 80%;
-  height: 60vh;
+  height: 80vh;
 }
 .card-title {
   padding: 1rem 0.5rem;
@@ -72,6 +72,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-top: 1rem;
 }
 @media only screen and (max-width: 1440px) {
   #navbar {
@@ -82,6 +83,10 @@ body {
     padding: 1rem;
     width: 12%;
     margin: 5rem 0;
+  }
+  .section-details .image {
+    width: 80%;
+    height: 80vh;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -108,6 +113,10 @@ body {
     width: 9rem;
     padding: 1rem;
     margin: 0 5rem;
+  }
+  .section-details .image {
+    width: 80%;
+    height: 70vh;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -150,6 +159,10 @@ body {
     font-size: 14px;
     padding: 1rem;
     margin: 0 0.2rem;
+  }
+  .section-details .image {
+    width: 100%;
+    height: 50vh;
   }
   .detail-body {
     grid-template-columns: 1fr;
